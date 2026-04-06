@@ -7,24 +7,29 @@
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: #0f172a;
-      margin: 0;
-      padding: 0;
+      background: radial-gradient(circle at top, #1e293b 0, #020617 55%, #000 100%);
+      min-height: 100vh;
+      padding: 32px 16px;
       color: #faf8f8;
+    
     }
-
-    .container {
+    
+    /*bloc principal*/
+    .mainsquare {
       max-width: 960px;
       margin: 40px auto;
-      background: rgba(1, 37, 54, 0.897);
-      padding: 30px;
-      border-radius: 10px;
+      background: 
+      radial-gradient(circle at 0% 0%, rgba(56,189,248,0.18), transparent 55%),
+      radial-gradient(circle at 100% 0%, rgba(129,140,248,0.16), transparent 55%);
+      padding: 32px 28px 28px;
+      border-radius: 24px;
       box-shadow: 0 4px 12px rgb(250, 250, 250);
+      
     }
-
-    .highlight {
-      color: #38bdf8;
-      font-weight: bold;
+     /*précisions quant à la séparation des couleurs*/
+    .precisions {
+      color: #38bdf8; /*bleu clair pour attirer l'oeil / améliorer le confort visuel*/
+      font-weight: bold; /*en gras afin de mettre en valeur la différence et attirer l'oeil*/
     }
 
     h1 {
@@ -34,10 +39,11 @@
 
     h2 {
       margin-top: 30px;
-      color: #9ca3af;
+      color: #9ca3af; /*gris clair pour contraster au mieux avec le bleu clair tout en restant sobre*/
     }
 
-    .avatar {
+    /*rajouter un côté "professionnel" sur le site avec une photo de profil*/
+    .pp {
       width: 90px;
       height: 90px;
       border-radius: 50%;
@@ -49,14 +55,15 @@
       margin: 0 auto 20px;
     }
 
+    /*bouton créé afin de permettre aux utilisateurs de me contacter*/
     .btn-contact {
   display: inline-block;
   padding: 6px 12px;
   border-radius: 999px;
-  border: 1px solid rgba(56, 189, 248, 0.7);      
-  color: white;             
-  background: #0ea5e9;  
-  text-decoration: none;
+  border: 1px solid rgba(56, 189, 248, 0.7);  /*couleur vive choisie spécialement pour marquer les bords du bouton même en passant le curseur dessus*/    
+  color: white;    /*blanc choisi exprès pour rester bien voyant*/         
+  background: #0ea5e9;     /*couleur vive dans le thème global du site qui attire l'oeil et donne envie de cliquer dessus*/
+  text-decoration: none;     /*permet de retirer le soulignement*/
   font-weight: bold;
   border-radius: 8px;
   transition: transform 0.2s ease, background 0.2s ease;
@@ -83,15 +90,15 @@
 ul li::before {
   content: "";
   position: absolute;
-  left: 0;
-  top: 8px;
+  left: 0; /*pour éviter que les points ne soient en superposition sur le texte*/
+  top: 8px; /*pour les aligner au texte*/
   width: 8px;
   height: 8px;
-  background: #38bdf8; 
+  background: #38bdf8; /*bleu clair pour le confort visuel*/
   border-radius: 50%;
 }
 
-
+    /*pied de page*/
     footer {
       text-align: center;
       margin-top: 30px;
@@ -124,30 +131,44 @@ ul li::before {
 </head>
 <body>
 
-  <div class="container">
-    <div class="avatar">U</div>
+  <div class="mainsquare">
+    <div class="pp">E</div>
 
-    <h1>Uvariel</h1>
+    <h1>Evan LAGAHE</h1>
     <p style="text-align:center; color:#9ca3af;">
       Ce site a été créé afin de pouvoir vous présenter mon parcours<br>
       et montrer ma motivation afind d'entrer dans cette formation.
     </p>
 <div class="row">
  <div class="box">
-    <h2><span class="highlight">À propos</span> de moi</h2>
+    <h2><span class="precisions">À propos</span> de moi</h2>
     <p>
-      texte
-
-
+      Mon parcours est assez "simple". J'ai suivi les cours tout en ne m'y sentant pas du tout bien en raison de plusieurs raisons personnelles.<br> 
+      <br>
+      Je me suis intéressé au monde numérique assez jeune, j'ai eu l'occasion de commencer l'expérience dès la sixième où j'ai été  mis en face de JavaScript pour commencer.<br>
+      <br>
+      à partir de là, j'ai continué le numérique en parallèle des cours (même si j'ai dû m'arrêter en troisième pour des raisons personnelles aussi).<br> 
+      <br>
+      à la fin de mon parcours scolaire, (arrêté en première pro.), j'ai enchainé des petits postes bénévolement dans des domaines bien différents.<br>
+      <br>
+      j'ai eu la chance d'expérimenter plusieurs domaines bien différents, mais une chose me restait en tête, le monde numérique.<br>
+      <br>
+      Moi qui suis particulièrement intéressé par le domaine informatique et notamment la gestion des appareils et leur fonctionnement, 
+      j'ai eu les étoiles dans les yeux en voyant cette formation.
     </p>
     </div>
 
 <div class="box">
-    <h2><span class="highlight">Motivation</span> pour la formation</h2>
+    <h2><span class="precisions">Motivations</span> pour la formation</h2>
     <ul>
-      <li>Point 1.</li>
-      <li>Point 2.</li>
-      <li>Point 3.</li>
+      <li>Moi qui suis particulièrement intéressé par le domaine informatique et notamment la gestion des appareils et leur fonctionnement, 
+      j'ai eu les étoiles dans les yeux en voyant cette formation. Pour moi, c'est comme avoir la possibilité de réaliser un rêve que je pensais hors de portée.</li>
+      <br><br><br>
+      <li>Cette formation me permettrait d'obtenir l'équivalent d'un diplôme que je n'ai jamais pu atteindre, le Bac. De plus, c'est spécialisé dans le domaine qui me passionne 
+        depuis des années et des années, je remplirai encore des pages et des pages de formulaires pour tenter ma chance.</li>
+      <br><br><br>
+      <li>Je ne sais pas si ça compte, mais actuellement ça fait bien 2 jours que je suis sur le formulaire afin de m'assurer de répondre à chaque question le mieux possible
+         et je suis prêt à passer autant de temps que possible afin d'être sûr de mes réponses. </li>
     </ul>
     </div>
   </div>
